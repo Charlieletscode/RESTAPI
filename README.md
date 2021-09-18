@@ -1,3 +1,3 @@
 # RESTAPI
 miniproj
-![GitHub Logo](/Sep 16, 2021 Doc.jpg)
+![Notes](https://github.com/Charlieletscode/RESTAPI/Sep 16, 2021 Doc.jpg)
