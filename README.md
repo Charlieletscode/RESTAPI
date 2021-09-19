@@ -14,11 +14,7 @@ EC463 Software Mini Project - 3 day rush (5 day rush) of coding
 
 ## API Link 
 
-[Food Data Central API]https://api.nal.usda.gov/fdc/v1/foods/search?api_key=DEMO_KEY
-
-## App Overview
-
-Our design of the app is using _React Native Expo_ for both the frontend and the backend design.
+[Food Data Central API]  https://api.nal.usda.gov/fdc/v1/foods/search?api_key=DEMO_KEY
 
 ## Screens Functionality
 
