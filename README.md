@@ -38,7 +38,7 @@ EC463 Software Mini Project - 3 day rush (5 day rush) of coding
 
 ## Demo Video
 
-
+[![IMAGE ALT TEXT](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](https://www.youtube.com/watch?v=GKq9ehyZq0E)
 
 ## Reference
 andriod developers webpage (https://developer.android.com/)
