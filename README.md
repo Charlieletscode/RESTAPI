@@ -25,7 +25,7 @@ EC463 Software Mini Project - 3 day rush (5 day rush) of coding
 
 * Sign in Page:
     * Allows new users to sign in with their google account directly.
-    * No creating account is needed
+    * No creating account is required
 
 * Profile Page: 
     * After login in the user will see his/her profile id, email, name
