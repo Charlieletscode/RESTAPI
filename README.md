@@ -39,6 +39,7 @@ EC463 Software Mini Project - 3 day rush (5 day rush) of coding
 ## Demo Video
 
 [![IMAGE](https://github.com/Charlieletscode/RESTAPI/blob/main/mq4.jpg)](https://www.youtube.com/watch?v=GKq9ehyZq0E)
+https://www.youtube.com/watch?v=GKq9ehyZq0E
 
 ## Reference
 andriod developers webpage (https://developer.android.com/)
