@@ -10,10 +10,30 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Userlogin">
         <activity
-            android:name=".Barscanner"
-            android:exported="true" />
+            android:name=".add_expense"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
         <activity
-            android:name=".profile"
+            android:name=".mainboard"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".signout"
+            android:exported="false"
+            android:label="@string/title_activity_signout"
+            android:theme="@style/Theme.Userlogin.NoActionBar">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Barscanner"
             android:exported="true" />
         <activity
             android:name=".login"
