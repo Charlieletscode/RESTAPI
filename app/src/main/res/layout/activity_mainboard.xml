@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mainboard">
+
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Spinner
+                android:id="@+id/currencyChoice"
+                android:layout_width="127dp"
+                android:layout_height="38dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="100dp"
+                android:background="@drawable/button_border"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/total_expenses_trendline"
+                android:layout_width="364dp"
+                android:layout_height="269dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="68dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/currencyChoice"></com.github.mikephil.charting.charts.LineChart>
+
+            <TextView
+                android:id="@+id/LabelNutrition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="My Nutrition "
+                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="My Nutrition " />
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/daily_expenses_trendline"
+                android:layout_width="364dp"
+                android:layout_height="269dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="56dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/total_expenses_trendline">
+
+            </com.github.mikephil.charting.charts.LineChart>
+
+            <TextView
+                android:id="@+id/LabelCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Total Calories of the Day"
+                android:textSize="17sp"
+                app:layout_constraintBottom_toTopOf="@+id/currencyChoice"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:text="Total Calories of the Day" />
+
+            <TextView
+                android:id="@+id/LabelIntake"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="8dp"
+                android:text="Today's Intake Category"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toTopOf="@+id/total_expenses_trendline"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:text="Today's Intake Category" />
+
+            <TextView
+                android:id="@+id/LabelEverydayCalories"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="8dp"
+                android:text="Everyday Calories "
+                android:textSize="18sp"
+                app:layout_constraintBottom_toTopOf="@+id/daily_expenses_trendline"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/categories_pieChart"
+                android:layout_width="364dp"
+                android:layout_height="269dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="56dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/daily_expenses_trendline" />
+
+            <TextView
+                android:id="@+id/LabelEverydayExpense"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="8dp"
+                android:text="Everyday Expense "
+                android:textSize="18sp"
+                app:layout_constraintBottom_toTopOf="@+id/categories_pieChart"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/currencyLabel2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/LabelEverydayCalories" />
+
+            <Button
+                android:id="@+id/toProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="24dp"
+                android:text="toProfile"
+                android:textAllCaps="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/addexpense"
+                android:layout_width="56dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="675dp"
+                android:layout_marginEnd="2dp"
+                android:text="Add"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

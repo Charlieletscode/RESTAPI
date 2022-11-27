@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_login);
         mAuth = FirebaseAuth.getInstance();
 
         FirebaseUser user = mAuth.getCurrentUser();
@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
             public final void run() {
                 Intent dashboardIntent;
                 if (user != null) {
-                    dashboardIntent = new Intent((Context)MainActivity.this, profile.class);
+                    dashboardIntent = new Intent((Context)MainActivity.this, mainboard.class);
                     MainActivity.this.startActivity(dashboardIntent);
                     MainActivity.this.finish();
                 } else {

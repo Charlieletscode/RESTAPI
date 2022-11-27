@@ -81,7 +81,7 @@ public class login extends AppCompatActivity {
 
             handleSignInResult(result);
 
-            Intent intent = new Intent((Context)login.this, profile.class);
+            Intent intent = new Intent((Context)login.this, mainboard.class);
             login.this.startActivity(intent);
             login.this.finish();
         }
